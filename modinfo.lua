@@ -32,14 +32,7 @@ icon_atlas = "modicon.xml"
 icon = "modicon.tex"
 
 server_filter_tags = {}
-
-local KEY_A = 65
-local keyslist = {}
-local string = "" --modified from gesture wheel
-for i = 1, 26 do
-	local ch = string.char(KEY_A + i - 1)
-	keyslist[i] = {description = ch, data = ch}
-end
+local string = ""
 
 configuration_options =
 {
@@ -48,6 +41,7 @@ configuration_options =
         label = "Idioma",
         options =   {
                         {description = "Portugues (BR)", data = false},
+                        {description = "简体中文", data = true},
                     },
         default = false,
     },
