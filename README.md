@@ -7,6 +7,14 @@
 - Corrigido bug que crashava o server quando um monstro era morto no limbo
 - Suporte parcial ao Portugues Brasileiro
 
+# Planejamento
+- Adicionar suporte completo ao Portugues Brasileiro
+- Adicionar opção de remover os itens dedicados do mod (utilizando apenas as moedas dropadas ao matar mobs e a loja)
+- Adicionar novos itens na loja, de acordo com atualizacoes atuais
+- Reconstruir funcao de tecla de atalho, de modo que esta nao seja acionada durante uso do chat e que seja possivel deixar desativada nas opcoes
+- Criar banco de dados separado do save do mundo, para que seja possivel (atraves do gerenciamento de arquivos e talvez configuracao global (com uma opção no menu de "permitir carteira global")) transportar a carteira de moedas dos players entre diferentes mundos
+- Criar uma funcao que restringe a desintegracao de acordo com itens normais e nao proibidos, fazendo assim com que itens unicos nas novas atualizacoes ja estivessem protegidos automaticamente
+
 # MOD Original
 [Simple Economy](https://steamcommunity.com/sharedfiles/filedetails/?id=1115709310)
 # Projeto
