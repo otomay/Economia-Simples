@@ -86,8 +86,8 @@ configuration_options =
         label = "Arrastar botao da loja",
         hover = "Permite os jogadores arrastarem e posicionarem o botao livremente, de acordo com suas preferencias",
         options = {
-            {description = "SIM", data = true, hover = "O botao pode ser arrastado"},
-            {description = "NAO", data = false, hover = "O botao nao pode ser arrastado"},
+		    {description = "SIM", data = true, hover = "O botao pode ser arrastado"},
+		    {description = "NAO", data = false, hover = "O botao nao pode ser arrastado"},
         },
         default = true,
     },
