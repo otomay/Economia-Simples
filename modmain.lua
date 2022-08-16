@@ -6,8 +6,14 @@ local Ingredient = GLOBAL.Ingredient
 local RECIPETABS = GLOBAL.RECIPETABS
 local TECH = GLOBAL.TECH
 
-require 'SEscripts/strings_en'
-TUNING.SElan = "en"
+local LAN_ = GetModConfigData('Language')
+if LAN_ then
+    require 'SEscripts/strings_cn'
+    TUNING.SElan = "cn"
+else
+    require 'SEscripts/strings_en'
+    TUNING.SElan = "en"
+end
 
 if GetModConfigData('Disintegrate') then
     TUNING.allowgoldstaff = true
@@ -224,6 +230,8 @@ Assets = {
     Asset("IMAGE", "images/sehud/wrap_title.tex"),
     Asset("ATLAS", "images/sehud/wrap_description_en.xml"),
     Asset("IMAGE", "images/sehud/wrap_description_en.tex"),
+    Asset("ATLAS", "images/sehud/wrap_description_cn.xml"),
+    Asset("IMAGE", "images/sehud/wrap_description_cn.tex"),
 }
 
 --载入清单
@@ -425,7 +433,12 @@ mytimeline = {
             price = mydoweight(inst, inst.sg.statemem.target)
 
             local str = _G.subfmt(_G.GetString(inst, announce_str), {weight = string.format("%0.2f", weight)})
-            str = str.."\ncoins: "..price
+
+            if TUNING.SElan == "cn" then
+                str = str.."\n金币："..price
+            elseif TUNING.SElan == "en" then
+                str = str.."\ncoins: "..price
+            end
 
             inst.components.talker:Say(str)
         else
@@ -446,7 +459,10 @@ AddStategraphPostInit("wilson", SGWilsonPostInit)
 
 local COIN_BUNDLE_UNWRAP = _G.Action({ rmb=true, priority=2 })  --打开钱袋动作,该参数使动作可以在scene中右键触发
 COIN_BUNDLE_UNWRAP.id = "COIN_BUNDLE_UNWRAP"  --id
-COIN_BUNDLE_UNWRAP.str = "Desembrulhar"
+if TUNING.SElan == "cn" then  --文字描述
+    COIN_BUNDLE_UNWRAP.str = "拆开钱袋"
+elseif TUNING.SElan == "en" then
+    COIN_BUNDLE_UNWRAP.str = "unwrap"
 end
 COIN_BUNDLE_UNWRAP.fn = function(act)  --动作触发时执行的函数
     local target = act.target or act.invobject
@@ -475,7 +491,10 @@ end)
 
 local COIN_BUNDLE_ADD = _G.Action()  --合并钱袋
 COIN_BUNDLE_ADD.id = "COIN_BUNDLE_ADD"
-COIN_BUNDLE_ADD.str = "Abastecer"
+if TUNING.SElan == "cn" then  --文字描述
+    COIN_BUNDLE_ADD.str = "合并钱袋"
+elseif TUNING.SElan == "en" then
+    COIN_BUNDLE_ADD.str = "fuel"
 end
 COIN_BUNDLE_ADD.fn = function(act)
     act.target.components.coin_container.amount = act.target.components.coin_container.amount + act.invobject.components.coin_container.amount
@@ -574,4 +593,3 @@ end
 GLOBAL.c_givesecoins = c_givesecoins
 
 AddClassPostConstruct("widgets/controls", Adduiseconomy)
-
