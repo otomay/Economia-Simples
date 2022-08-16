@@ -19,7 +19,6 @@ author = "Otomai"
 version = "1.0.1"
 
 forumthread = ""
-
 api_version = 10
 
 dst_compatible = true
@@ -40,10 +39,11 @@ configuration_options =
         name = "Language",
         label = "Idioma",
         options =   {
-                        {description = "Portugues (BR)", data = false},
-                        {description = "简体中文", data = true},
+                        {description = "Portugues (BR)", data = "ptbr"},
+			{description = "English", data = "en"},
+                        {description = "简体中文", data = "cn"},
                     },
-        default = false,
+        default = "ptbr",
     },
     {
         name = "KillBonus",
