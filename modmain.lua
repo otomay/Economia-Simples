@@ -7,11 +7,14 @@ local RECIPETABS = GLOBAL.RECIPETABS
 local TECH = GLOBAL.TECH
 
 local LAN_ = GetModConfigData('Language')
-if LAN_ then
+if LAN_ = "cn" then
     require 'SEscripts/strings_cn'
     TUNING.SElan = "cn"
-else
+elseif LAN_ = "en" then
     require 'SEscripts/strings_en'
+    TUNING.SElan = "en"
+elseif LAN_ = "ptbr" then
+    require 'SEscripts/strings_ptbr'
     TUNING.SElan = "en"
 end
 
