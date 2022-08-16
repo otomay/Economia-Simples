@@ -53,7 +53,7 @@ configuration_options =
     },
     {
         name = "KillBonus",
-        label = "Recompensa por matar monstros",
+        label = "Recompensa em moedas por matar monstros",
         options =   {
                         {description = "Off", data = false},
 						{description = "100% da vida maxima do monstro", data = 1.0},
@@ -73,8 +73,8 @@ configuration_options =
         name = "Disintegrate",
         label = "Permitir desintegracao",
         options =   {
-                        {description = "NAO", data = false, hover = "Nao permite que a varinha de midas desintegre itens"},
-                        {description = "SIM", data = true, hover = "Permite que a varinha de midas desintegre itens"},
+                        {description = "NAO", data = false, hover = "Nao permite que a varinha de midas desintegre itens por moedas"},
+                        {description = "SIM", data = true, hover = "Permite que a varinha de midas desintegre itens por moedas"},
                     },
         default = false,
     },
