@@ -8,13 +8,7 @@ description =
 原作者：柴柴
 ]]
 
-local KEY_A = 65
-local keyslist = {}
 local string = "" --modified from gesture wheel
-for i = 1, 26 do
-	local ch = string.char(KEY_A + i - 1)
-	keyslist[i] = {description = ch, data = ch}
-end
 
 configuration_options =
 {
@@ -62,13 +56,6 @@ configuration_options =
                         {description ="否", data = false, hover ="不允许分解珍稀物品"},
                     },
         default = true,
-    },
-    {
-		name = "打开/关闭商店",
-		label = "设置热键",
-		hover = "按下热键以打开或关闭商店",
-		options = keyslist,
-		default = "C", --C
     },
     {
         name = "CanDragMainbutton",
