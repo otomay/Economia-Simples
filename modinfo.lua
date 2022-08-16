@@ -7,7 +7,7 @@ description =
 [*]Restricoes adicionais de desintegracao usando a Varinha de Midas, devido novas expansoes do jogo (creditos [url=]BM[/url]
 [*]Sem a hotkey obrigatoria de abrir a loja [strike](que atrapalhava quando tava digitando)[/strike]
 [*]Corrigido bug que crashava o server quando um monstro era morto no limbo
-[*]Parcialmente traduzido para Portugues
+[*]Suporte parcial ao Portugues Brasileiro
 [/list]
 
 [h1] MOD Original [/h1]
