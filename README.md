@@ -13,7 +13,7 @@
 - Adicionar novos itens na loja, de acordo com atualizacoes atuais
 - Reconstruir funcao de tecla de atalho, de modo que esta nao seja acionada durante uso do chat e que seja possivel deixar desativada nas opcoes
 - Criar banco de dados separado do save do mundo, para que seja possivel (atraves do gerenciamento de arquivos e talvez configuracao global (com uma opção no menu de "permitir carteira global")) transportar a carteira de moedas dos players entre diferentes mundos
-- Criar uma funcao que restringe a desintegracao de acordo com itens normais e nao proibidos, fazendo assim com que itens unicos nas novas atualizacoes ja estivessem protegidos automaticamente
+- Criar uma funcao que restringe a desintegracao de acordo com itens normais, fazendo assim com que itens unicos nas novas atualizacoes ja estejam protegidos automaticamente (o que, inversamente, faria com que a Varinha de Midas nao desintegrasse novos itens normais... algo a se pensar melhor)
 
 # MOD Original
 [Simple Economy](https://steamcommunity.com/sharedfiles/filedetails/?id=1115709310)
