@@ -8,40 +8,40 @@ STRINGS.NAMES.WINTER_ORNAMENT_LIGHT4 = STRINGS.NAMES.WINTER_ORNAMENT_LIGHT4 or "
 STRINGS.NAMES.SECOIN = "Simple Gold"
 STRINGS.CHARACTERS.GENERIC.DESCRIBE.LUCKAMULET = "Simple Gold"
 
-STRINGS.NAMES.STEALER = "Gold Digger"
-STRINGS.CHARACTERS.GENERIC.DESCRIBE.STEALER = "Hardy, hearty and multi-purpose"
+STRINGS.NAMES.STEALER = "Conquistador de ouro"
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.STEALER = "Serve como machado, picareta e ainda rende moedas!"
 
-STRINGS.NAMES.GOLDSTAFF = "Midas Wand"
-STRINGS.CHARACTERS.GENERIC.DESCRIBE.GOLDSTAFF = "Turns everything into gold"
+STRINGS.NAMES.GOLDSTAFF = "Varinha de Midas"
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.GOLDSTAFF = "Transforma itens em moedas"
 
-STRINGS.NAMES.VIPCARD = "VIP Card"
-STRINGS.CHARACTERS.GENERIC.DESCRIBE.VIPCARD = "For the shopaholics"
+STRINGS.NAMES.VIPCARD = "Cartao VIP"
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.VIPCARD = "Concede desconto nas compras"
 
-STRINGS.NAMES.LUCKAMULET = "Lucky Charm"
-STRINGS.CHARACTERS.GENERIC.DESCRIBE.LUCKAMULET = "Blessings crystalized into a gem"
+STRINGS.NAMES.LUCKAMULET = "Amuleto da sorte"
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.LUCKAMULET = "Chance de ganhar moedas em praticamente todas tarefas... ate andar!"
 
-STRINGS.NAMES.COIN_BUNDLE = "a bag of coins"
-STRINGS.CHARACTERS.GENERIC.DESCRIBE.COIN_BUNDLE = "coins:"
+STRINGS.NAMES.COIN_BUNDLE = "Saco de moedas"
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.COIN_BUNDLE = "Moedas:"
 
 STRINGS.SIMPLEECONOMY={
-[1] = "Let’s begin our journey of gold farming~",
-[2] = "Trade",
-[3] = "Instructions",
-[4] = "Back",
-[5] = "Close",
-[6] = "Next",
-[7] = "Previous",
-[8] = "Random Blueprint",
+[1] = "Vamos comecar a farmar moedas!",
+[2] = "Trocar",
+[3] = "Intrucoes",
+[4] = "Voltar",
+[5] = "Fechar",
+[6] = "Proximo",
+[7] = "Anterior",
+[8] = "Blueprint aleatoria",
 [9] = "+ ",
 [10] = "+ ",
-[11] = "Those items could not be traded in this market.",
-[12] = "There is nothing that can be disintegrated.",
-[13] = "Shopping level increased!",
-[14] = "Psst... I have ",
-[15] = " coins.",
-[16] = "Holy cow, I have ",
-[17] = " coins.",
-[18] = " coins.",
-[19] = " coins.",
-[20] = "Refresh"
+[11] = "Isso se parece com... mercado negro!",
+[12] = "Nao ha nada aqui que possa ser desintegrado",
+[13] = "Nivel da loja aumentado!",
+[14] = "Ei, psiu, olha o que eu tenho aqui... ",
+[15] = " Moedas",
+[16] = "Meu deus, olha o que eu tenho! ",
+[17] = " Moedas.",
+[18] = " Moedas.",
+[19] = " Moedas.",
+[20] = "Atualizar"
 }
