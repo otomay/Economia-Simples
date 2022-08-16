@@ -47,7 +47,6 @@ configuration_options =
         label = "Idioma",
         options =   {
                         {description = "Portugues (BR)", data = false},
-                        {description = "简体中文", data = true},
                     },
         default = false,
     },
