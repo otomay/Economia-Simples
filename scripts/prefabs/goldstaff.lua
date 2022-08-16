@@ -46,8 +46,6 @@ local function goldstafffn(staff, target, pos)
         and v.prefab ~= "hermit_pearl"
         and v.prefab ~= "terrarium"
         and v.prefab ~= "atrium_key"
-        and v.prefab ~= ""
-        and v.prefab ~= ""
         and staff.components.finiteuses.current >= 1 then  --如果有足够耐久
             local price = 0
             local stacksize = 1
