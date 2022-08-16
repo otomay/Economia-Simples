@@ -1,17 +1,18 @@
 name =
 [[ Economia Simples ]]
 description =
-[[[h1] Alteracoes [/h1]
+[[[b]Baseado em:[/b] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2460675139]Simple Economy (Fork of Shaoqun Liu)[/url]
+[h1] Alteracoes [/h1]
 [list]
+[*]Restricoes adicionais de desintegracao usando a Varinha de Midas, devido novas expansoes do jogo (creditos [url=]BM[/url]
 [*]Sem a hotkey obrigatoria de abrir a loja [strike](que atrapalhava quando tava digitando)[/strike]
 [*]Corrigido bug que crashava o server quando um monstro era morto no limbo
+[*]Parcialmente traduzido para Portugues
 [/list]
-
-[h1] Referencias e creditos [/h1]
-[b]Edicao em cima de:[/b] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2460675139]Simple Economy (Fork of Shaoqun Liu)[/url]
-[b]Mod original:[/b] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1115709310]Simple Economy[/url]
-
-[url=https://github.com/otomay/Economia-Simples]Projeto no github[/url]
+[h1] MOD Original [/h1]
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=1115709310]Simple Economy[/url]
+[h1] Projeto [/h1]
+[url=https://github.com/otomay/Economia-Simples]Github[/url]
 ]]
 author = "Otomai"
 version = "1.0.1"
