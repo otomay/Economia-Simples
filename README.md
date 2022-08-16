@@ -1,4 +1,4 @@
-# Economia-Simples
+# Economia Simples
 **Contexto:** Mod de Don't Starve Together que implementa um sistema de economia no jogo atraves da disponibilizacao de uma loja (interface no jogo) e a possibilidade do ganho de moedas de varias maneiras
 
 **Baseado em:** [Simple Economy (Fork of Shaoqun Liu)](https://steamcommunity.com/sharedfiles/filedetails/?id=2460675139)
