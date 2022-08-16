@@ -169,7 +169,8 @@ function seplayerstatus:givesecoin(secoin)  --给金币
         		z = z1 - z0
         		secoin.Transform:SetPosition(x/(maxtime-i)+x0,y/(maxtime-i)+y0,z/(maxtime-i)+z0)
         		if i == maxtime then
-					self:DoDeltaCoin(price)  --调用了改变金币函数
+				self:DoDeltaCoin(price)  --调用了改变金币函数
+				-- Aqui é o espaço para alimentar um BD
         			secoin:Remove()
         		end
     		end)
