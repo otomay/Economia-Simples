@@ -16,7 +16,7 @@ description =
 [url=https://github.com/otomay/Economia-Simples]Github[/url]
 ]]
 author = "Otomai"
-version = "1.0.1"
+version = "1.1"
 
 forumthread = ""
 api_version = 10
