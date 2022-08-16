@@ -4,6 +4,7 @@ description =
 [[[b]Baseado em:[/b] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2460675139]Simple Economy (Fork of Shaoqun Liu)[/url]
 [h1] Alteracoes [/h1]
 [list]
+[*]Restricoes adicionais de desintegracao usando a Varinha de Midas, devido novas expansoes do jogo (creditos [url=]BM[/url]
 [*]Sem a hotkey obrigatoria de abrir a loja [strike](que atrapalhava quando tava digitando)[/strike]
 [*]Corrigido bug que crashava o server quando um monstro era morto no limbo
 [*]Parcialmente traduzido para Portugues
