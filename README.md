@@ -7,7 +7,7 @@
 # Alteracoes vigentes e planos futuros
 - [x] Removida a hotkey (ate entao obrigatoria) de abrir a loja, que atrapalhava o uso do chat
 - [x] Corrigido bug que crashava o server quando um monstro era morto no limbo
-- [x] Adicionadas restricoes de desintegracao usando a Varinha de Midas, devido novas expansoes do jogo (creditos BM)
+- [x] Adicionadas restricoes de desintegracao usando a Varinha de Midas, devido novas expansoes do jogo (creditos [BM](https://steamcommunity.com/sharedfiles/filedetails/?id=2848628850]BM[/url]))
 - [x] Suporte parcial ao Portugues Brasileiro
 - [ ] Suporte completo ao Portugues Brasileiro (https://github.com/otomay/Economia-Simples/issues/1 https://github.com/otomay/Economia-Simples/labels/help%20wanted)
 - [ ] Opção de remover os itens dedicados do mod (utilizando apenas as moedas dropadas ao matar mobs e a loja) (https://github.com/otomay/Economia-Simples/issues/2)
