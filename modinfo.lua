@@ -3,6 +3,9 @@ name =
 description =
 [[
 Implementa um sistema de economia no jogo atraves da disponibilizacao de uma loja (interface no jogo) e a possibilidade do ganho de moedas de varias maneiras, incluindo combate.
+
+- Em servidores endless recomenda-se utilizar a configuracao de, no máximo, 2% da vida maxima dos monstros
+- Permitir desintegracao de itens preciosos nao afeta itens unicos e obrigatorios para o andamento do jogo, como os altares da lua
 ]]
 author = "Otomai"
 version = "1.1"
@@ -52,18 +55,18 @@ configuration_options =
 	},
 	{
 		name = "Disintegrate",
-		label = "Permitir desintegracao",
-		hover = "A varinha de Midas troca itens por moedas, equivalente a uma venda",
+		label = "Permitir desintegração",
+		hover = "A varinha de Midas troca itens por moedas. Equivalente a uma venda",
 		options = {
-			{description = "NAO", data = false, hover = "Nao permite que a varinha de midas desintegre itens por moedas"},
-			{description = "SIM", data = true, hover = "Permite que a varinha de midas desintegre itens por moedas"},
+			{description = "NAO", data = false, hover = "A varinha de Midas servirá apenas para matar monstros fracos"},
+			{description = "SIM", data = true, hover = "A varinha de Midas poderá desintegrar itens por moedas"},
 		},
 		default = false,
 	},
 	{
 		name = "Precious_Disintegratable",
 		label = "Desintegrar preciosos",
-		hover = "Permitir desintegracao de itens preciosos (e nao unicos, como olho de deerclops e dente do walrus)",
+		hover = "Itens preciosos, como olho de deerclops, dente do walrus e outros itens de boss",
 		options = {
 			{description = "SIM", data = true, hover = "Permite desintegrar itens da lista de preciosos"},
 			{description = "NAO", data = false, hover ="Não permite desintegrar itens da lista de preciosos"},
@@ -72,11 +75,11 @@ configuration_options =
 	},
 	{
 		name = "CanDragMainbutton",
-		label = "Arrastar botao da loja",
-		hover = "Permite os jogadores arrastarem e posicionarem o botao livremente, de acordo com suas preferencias",
+		label = "Arrastar botão da loja",
+		hover = "Permite os jogadores arrastarem e posicionarem o botão livremente, de acordo com suas preferencias",
 		options = {
-			{description = "SIM", data = true, hover = "O botao pode ser arrastado"},
-			{description = "NAO", data = false, hover = "O botao nao pode ser arrastado"},
+			{description = "SIM", data = true, hover = "O botão pode ser arrastado"},
+			{description = "NAO", data = false, hover = "O botão nao pode ser arrastado"},
 		},
 		default = true,
 	},
