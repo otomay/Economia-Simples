@@ -194,6 +194,9 @@ self.coinamount = self:AddChild(Widget("coinamount"))
 			self.owner.coinamount:SetPosition(next_pos_c)
 
         end
+        if self.draggingTimer > 3 then
+            self.draggingTimer = 0x0
+        end
         if not self.dragging then
             self.draggingTimer = 0x0
         end
