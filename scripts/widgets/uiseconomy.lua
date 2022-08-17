@@ -204,61 +204,6 @@ self.coinamount = self:AddChild(Widget("coinamount"))
         end
     end
 
---[[
-	self.mainbutton.old_OnControl = self.mainbutton.OnControl
-	self.mainbutton.OnControl = function(self, control, down)
-		if control == self.control then
-			if down then
-				if not self.down then
-					self.dragging = true
-					self.draggingPos.x, self.draggingPos.y = GetScreenPos()
-				end
-			else
-				if self.down then
-					self.dragging = false
-					self.draggingPos = {x = 0, y = 0}
-					self.draggingTimer = 0
-				end
-			end
-		end
-		self.old_OnControl(self, control, down)
-	end
-
-	self.mainbutton.OnUpdate = function(self, dt)
-		dt = dt or 0x0
-		if self.down then
-			if self.whiledown then
-				self.draggingTimer = self.draggingTimer + dt
-				self.whiledown()
-			end
-		end
-	end
-
-	self.mainbutton:SetWhileDown(function()
-		if self.mainbutton.draggable and self.mainbutton.dragging then
-			local x, y = GetScreenPos()
-			local diff_x = x - self.mainbutton.draggingPos.x
-			local diff_y = y - self.mainbutton.draggingPos.y
-			self.mainbutton.draggingPos.x = x
-			self.mainbutton.draggingPos.y = y
-
-			local next_pos = self.mainbutton:GetPosition()
-			print('next_pos.x='..next_pos.x..'next_y='..next_pos.y)
-			next_pos.x = next_pos.x + diff_x*1.15
-			next_pos.y = next_pos.y + diff_y*1.15
-			self.mainbutton.o_pos = next_pos
-			self.mainbutton:SetPosition(next_pos)
-
-			local next_pos_c = self.coinamount:GetPosition()
-			next_pos_c.x = next_pos_c.x + diff_x*1.15
-			next_pos_c.y = next_pos_c.y + diff_y*1.15
-			self.coinamount.o_pos = next_pos_c
-			self.coinamount:SetPosition(next_pos_c)
-		end
-	end)
-
-]]--
-
 	self.mainbutton:SetOnClick(function()
 		if TheInput:IsKeyDown(KEY_CTRL) then
 			if self.cooldown then
