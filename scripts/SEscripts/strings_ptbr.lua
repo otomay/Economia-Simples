@@ -9,7 +9,7 @@ STRINGS.NAMES.SECOIN = "Simple Gold"
 STRINGS.CHARACTERS.GENERIC.DESCRIBE.LUCKAMULET = "Simple Gold"
 
 STRINGS.NAMES.STEALER = "Canivete multifuncional"
-STRINGS.CHARACTERS.GENERIC.DESCRIBE.STEALER = "Serve como machado, picareta, arma (fraca) e ainda rende moedas! E é infinito!"
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.STEALER = "Serve como machado, picareta, martelo, arma (fraca) e ainda rende moedas! E é infinito!"
 
 STRINGS.NAMES.GOLDSTAFF = "Varinha de Midas"
 STRINGS.CHARACTERS.GENERIC.DESCRIBE.GOLDSTAFF = "Transforma itens e monstros fracos em moedas"
