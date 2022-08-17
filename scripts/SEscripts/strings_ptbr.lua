@@ -8,17 +8,17 @@ STRINGS.NAMES.WINTER_ORNAMENT_LIGHT4 = STRINGS.NAMES.WINTER_ORNAMENT_LIGHT4 or "
 STRINGS.NAMES.SECOIN = "Simple Gold"
 STRINGS.CHARACTERS.GENERIC.DESCRIBE.LUCKAMULET = "Simple Gold"
 
-STRINGS.NAMES.STEALER = "Conquistador de ouro"
-STRINGS.CHARACTERS.GENERIC.DESCRIBE.STEALER = "Serve como machado, picareta e ainda rende moedas!"
+STRINGS.NAMES.STEALER = "Canivete multifuncional"
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.STEALER = "Serve como machado, picareta, arma (fraca) e ainda rende moedas! E é infinito!"
 
 STRINGS.NAMES.GOLDSTAFF = "Varinha de Midas"
-STRINGS.CHARACTERS.GENERIC.DESCRIBE.GOLDSTAFF = "Transforma itens em moedas"
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.GOLDSTAFF = "Transforma itens e monstros fracos em moedas"
 
 STRINGS.NAMES.VIPCARD = "Cartao VIP"
 STRINGS.CHARACTERS.GENERIC.DESCRIBE.VIPCARD = "Concede desconto nas compras"
 
 STRINGS.NAMES.LUCKAMULET = "Amuleto da sorte"
-STRINGS.CHARACTERS.GENERIC.DESCRIBE.LUCKAMULET = "Chance de ganhar moedas em praticamente todas tarefas... ate andar!"
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.LUCKAMULET = "Chance de ganhar moedas em praticamente todas tarefas... até mesmo andar!"
 
 STRINGS.NAMES.COIN_BUNDLE = "Saco de moedas"
 STRINGS.CHARACTERS.GENERIC.DESCRIBE.COIN_BUNDLE = "Moedas:"
@@ -35,13 +35,13 @@ STRINGS.SIMPLEECONOMY={
 [9] = "+ ",
 [10] = "+ ",
 [11] = "Isso se parece com... mercado negro!",
-[12] = "Nao ha nada aqui que possa ser desintegrado",
-[13] = "Nivel da loja aumentado!",
+[12] = "Nao há nada ali que possa ser desintegrado",
+[13] = "Nível da loja aumentado!",
 [14] = "Ei, psiu, olha o que eu tenho aqui... ",
-[15] = " Moedas",
-[16] = "Meu deus, olha o que eu tenho! ",
-[17] = " Moedas.",
-[18] = " Moedas.",
-[19] = " Moedas.",
-[20] = "Atualizar"
+[15] = " moedas",
+[16] = "Meu deus, olha o que eu tenho: ",
+[17] = " moedas.",
+[18] = " moedas.",
+[19] = " moedas.",
+[20] = "Atualizar (custa moedas)"
 }
