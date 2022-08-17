@@ -1,24 +1,16 @@
 name =
 [[ Economia Simples ]]
 description =
-[[[b]Baseado em:[/b] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2460675139]Simple Economy (Fork of Shaoqun Liu)[/url]
-[h1] Alteracoes [/h1]
-[list]
-[*]Restricoes adicionais de desintegracao usando a Varinha de Midas, devido novas expansoes do jogo (creditos [url=]BM[/url]
-[*]Sem a hotkey obrigatoria de abrir a loja [strike](que atrapalhava quando tava digitando)[/strike]
-[*]Corrigido bug que crashava o server quando um monstro era morto no limbo
-[*]Parcialmente traduzido para Portugues
-[/list]
-[h1] MOD Original [/h1]
-[url=https://steamcommunity.com/sharedfiles/filedetails/?id=1115709310]Simple Economy[/url]
-[h1] Projeto [/h1]
-[url=https://github.com/otomay/Economia-Simples]Github[/url]
+[[
+It implements an in-game economy system through the provision of a store (in-game interface) and the possibility of earning coins in various ways, including combat.
+
+- On endless servers it is recommended to use a setting of at most 2% of the monsters' maximum health
+- Allowing precious items to disintegrate does not affect unique and mandatory items for the game progress, such as moon altars
 ]]
 author = "Otomai"
-version = "1.0.1"
+version = "1.1"
 
 forumthread = ""
-
 api_version = 10
 
 dst_compatible = true
@@ -26,69 +18,69 @@ dont_starve_compatible = false
 reign_of_giants_compatible = false
 all_clients_require_mod = true
 
-
 icon_atlas = "modicon.xml"
 icon = "modicon.tex"
-
 server_filter_tags = {}
-
-local string = "" --modified from gesture wheel
 
 configuration_options =
 {
-    {
-        name = "Language",
-        label = "Language",
-        options =   {
-                        {description = "English", data = false},
-                        {description = "简体中文", data = true},
-                    },
-        default = false,
-    },
-    {
-        name = "KillBonus",
-        label = "Reward on killing mobs",
-        options =   {
-                        {description = "Off", data = false},
-						{description = "100% of mobs max health", data = 1.0},
-						{description = "50% of mobs max health", data = 0.50},
-						{description = "25% of mobs max health", data = 0.25},
-                        {description = "10% of mobs max health", data = 0.1},
-						{description = "8% of mobs max health", data = 0.08},
-						{description = "5% of mobs max health", data = 0.05},
-						{description = "2% of mobs max health", data = 0.02},
-						{description = "1% of mobs max health", data = 0.01},
-						{description = "0.5% of mobs max health", data = 0.005},
-						{description = "0.1% of mobs max health", data = 0.001},
-                    },
-        default = 0.02,
-    },
-    {
-        name = "Disintegrate",
-        label = "Allow disintegration",
-        options =   {
-                        {description = "NO", data = false, hover = "Not allow to use Midas Wand to disintegrate items.".."\n".."点金杖仅可用来击杀低血量怪物以换取金币".."\n".."选此选项后以点金杖攻击低血量生物可100%几率击杀"},
-                        {description = "YES", data = true, hover = "Allow to use Midas Wand to disintegration items.".."\n".."选此选项后以点金杖攻击低血量生物仅可25%几率击杀"},
-                    },
-        default = false,
-    },
-    {
-        name = "Precious_Disintegratable",
-        label = "Allow disintegrating precious items",
-        options =   {
-                       {description = "YES", data = true, hover = "Allow to distintegrate items in the list of precious items."},
-                       {description = "NO", data = false, hover ="Not allow to distintegrate items in the list of precious items."},
-                    },
-        default = false,
-    },
-    {
-        name = "CanDragMainbutton",
-        label = "CanDragMainbutton",
-        hover = "the Mainbutton can be dragged",
-        options = {
-            {description = "YES", data = true, hover = "the Mainbutton can be dragged"},
-            {description = "NO", data = false, hover = "the Mainbutton can't be dragged"},
-        },
-        default = true,
-    },
+	{
+		name = "Language",
+		label = "Language",
+		options = {
+			{description = "Português (BR)", data = 1},
+			{description = "English", data = 2},
+			{description = "简体中文", data = 3},
+		},
+		default = 1,
+	},
+	{
+		name = "KillBonus",
+		label = "Monsters give coins",
+		hover = "Killing monsters grants coins",
+		options = {
+			{description = "Off", data = false},
+			{description = "100% monster's maximum health", data = 1.0},
+			{description = "50% monster's maximum health", data = 0.50},
+			{description = "25% monster's maximum health", data = 0.25},
+			{description = "10% monster's maximum health", data = 0.1},
+			{description = "8% monster's maximum health", data = 0.08},
+			{description = "5% monster's maximum health", data = 0.05},
+			{description = "2% monster's maximum health", data = 0.02},
+			{description = "1% monster's maximum health", data = 0.01},
+			{description = "0.5% monster's maximum health", data = 0.005},
+			{description = "0.1% monster's maximum health", data = 0.001},
+		},
+		default = 0.02,
+	},
+	{
+		name = "Disintegrate",
+		label = "Allow disintegration",
+		hover = "Midas' wand exchanges items for coins. Equivalent to a sale",
+		options = {
+			{description = "NO", data = false, hover = "Midas' wand won't do any good"},
+			{description = "YES", data = true, hover = "Midas' wand will be able to disintegrate weak items and monsters for coins"},
+		},
+		default = false,
+	},
+	{
+		name = "Precious_Disintegratable",
+		label = "Disintegrate precious",
+		hover = "Precious items such as eye of deerclops, walrus tooth and other boss items",
+		options = {
+			{description = "YES", data = true, hover = "Allows you to disintegrate items from the precious list"},
+			{description = "NO", data = false, hover ="Does not allow to disintegrate items from the precious list"},
+		},
+		default = false,
+	},
+	{
+		name = "CanDragMainbutton",
+		label = "Drag shop button",
+		hover = "Allows players to freely drag and place the button according to their preferences",
+		options = {
+			{description = "YES", data = true, hover = "The button can be dragged"},
+			{description = "NO", data = false, hover = "Button cannot be dragged"},
+		},
+		default = true,
+	},
 }
