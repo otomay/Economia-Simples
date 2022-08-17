@@ -192,10 +192,12 @@ self.coinamount = self:AddChild(Widget("coinamount"))
 			next_pos_c.y = next_pos_c.y + diff_y*1.15
 			self.owner.coinamount.o_pos = next_pos_c
 			self.owner.coinamount:SetPosition(next_pos_c)
-
-        end
-        if self.draggingTimer > 3 then
-            self.draggingTimer = 0x0
+			--if self.draggingTimer > 3 then
+				--self.draggingTimer = 0x0
+				--self.moveLayerTimer = 0x0
+				--self:MoveToFront()
+				--return
+			--end
         end
         if not self.dragging then
             self.draggingTimer = 0x0
