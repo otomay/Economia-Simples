@@ -15,6 +15,7 @@
 - [ ] Tecla de atalho: não permitir acionamento durante uso do chat e não ser obrigatório (possibilidade de desativar) (https://github.com/otomay/Economia-Simples/issues/4)
 - [ ] Banco de dados (carteira de moedas) separado do save do mundo, para que seja possível (através do gerenciamento de arquivos e talvez configuração global (com uma opção no menu de "permitir carteira global")) transportar a carteira de moedas dos players entre diferentes mundos (https://github.com/otomay/Economia-Simples/issues/5)
 - [ ] Restringir a desintegração de acordo com itens normais, fazendo assim com que itens únicos nas novas atualizações ja estejam protegidos automaticamente (o que, inversamente, faria com que a Varinha de Midas não desintegrasse novos itens normais... algo a se pensar melhor) (https://github.com/otomay/Economia-Simples/issues/6 https://github.com/otomay/Economia-Simples/labels/help%20wanted)
+- [ ] Corrigir bug em que o botão da loja fica seguindo o mouse eternamente, impossibilitando acessar a loja sem tecla de atalho (https://github.com/otomay/Economia-Simples/issues/7)
 
 # MOD Original
 [Simple Economy](https://steamcommunity.com/sharedfiles/filedetails/?id=1115709310)
