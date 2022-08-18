@@ -196,7 +196,7 @@ self.coinamount = self:AddChild(Widget("coinamount"))
 				--self.draggingTimer = 0x0
 				--self.moveLayerTimer = 0x0
 				--self:MoveToFront()
-				--return
+				--self:StartUpdating()
 			--end
         end
         if not self.dragging then
