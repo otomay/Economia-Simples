@@ -8,7 +8,7 @@ It implements an in-game economy system through the provision of a store (in-gam
 - Allowing precious items to disintegrate does not affect unique and mandatory items for the game progress, such as moon altars
 ]]
 author = "Otomai"
-version = "1.2.1"
+version = "1.2.2"
 
 forumthread = ""
 api_version = 10

@@ -8,7 +8,7 @@ Implementa um sistema de economia no jogo atraves da disponibilizacao de uma loj
 - Permitir desintegracao de itens preciosos nao afeta itens unicos e obrigatorios para o andamento do jogo, como os altares da lua
 ]]
 author = "Otomai"
-version = "1.2.1"
+version = "1.2.2"
 
 forumthread = ""
 api_version = 10
