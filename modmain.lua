@@ -561,7 +561,14 @@ if killBonus then
                     inst.components.combat.target and
                     inst.components.combat.defaultdamage > 0 then
                     local mobPosition = inst:GetPosition()
-                    local bounty = math.floor((inst.components.health.maxhealth *  killBonus))
+                    local chanceDeArredondar = math.random(10, 50) / 100
+                    local bounty = inst.components.health.maxhealth * killBonus
+
+                    if bounty < 1 and math.random() <= chanceDeArredondar then
+                        bounty = 1
+                    else
+                        bounty = math.floor(bounty)
+                    end
                                                
                     if bounty > 0 then
                         for k, player in pairs(
@@ -587,7 +594,7 @@ if killBonus then
     function c_givesecoins(amount)
         if GLOBAL.TheNet:GetIsClient() then return end
         local player = GLOBAL.GetPlayer()
-        --GetPlayer().components.seplayerstatus:DoDeltaCoin(amount)
+        --GetPlayer().components.seplayerstatus:DoDeltaCoin('a'mount)
             player.components.seplayerstatus:DoDeltaCoin(amount)
         
     end

@@ -8,6 +8,32 @@ local function secprecious(self,precious) self.inst.secprecious:set(precious) en
 local function secpreciouschange(self,preciouschange) self.inst.secpreciouschange:set(preciouschange) end
 local function secsoundm(self,soundm) self.inst.secsoundm:set(soundm) end
 
+function RandomVariable(length)
+	local res = ""
+	for i = 1, length do
+		res = res .. string.char(math.random(97, 122))
+	end
+	return res
+end
+
+function atualizarBanco_jogadores(idKleiJogador, nomeJogador, chave, monstro)
+
+    if idKleiJogador == nil or nomeJogador == nil or chave == nil or monstro == nil then return end
+
+    local entradaDatabaseJogadores = 'DATABASE_JOGADORES@@@@@@' .. idKleiJogador .. '@' .. nomeJogador .. '@' .. chave .. '@' .. monstro
+    local ofilename = "EntradasDB/" .. RandomVariable(50) .. ".txt"
+
+	local ofile = io.open(ofilename, "w")
+
+	if ofile == nil then
+        print("não existe")
+        return
+    end
+
+    ofile:write(entradaDatabaseJogadores)
+    ofile:close()
+end
+
 local seplayerstatus = Class(function(self, inst)  --经济学类
     self.inst = inst
     self.coin = 200
@@ -98,9 +124,11 @@ function seplayerstatus:DoDeltaCoin(amount,notgainexp,nodiscount)  --改变金�
 		elseif nodiscount == nil or nodiscount == false then
 			self.coin = self.coin + math.ceil(amount*self.discount)
 		end
+		atualizarBanco_jogadores(self.inst.userid, self.inst.name, 'moedasgastas', 'moedasgastas+' .. (amount*-1))
 	else  --增加金币
 		self.coin = self.coin + amount
 		self.inst.components.talker:Say(STRINGS.SIMPLEECONOMY[9]..amount..STRINGS.SIMPLEECONOMY[18])
+		atualizarBanco_jogadores(self.inst.userid, self.inst.name, 'moedasrecebidas', 'moedasrecebidas+' .. amount)
 	end
 	if self.coin >= 999999 then self.coin = 999999 end
 	self.inst:PushEvent("SEDoDeltaCoin")  --广播事件
@@ -114,6 +142,7 @@ function seplayerstatus:DoDeltaCoin(amount,notgainexp,nodiscount)  --改变金�
 	if notgainexp == nil or notgainexp == false then
 		self:DoDeltaExp(math.abs(amount))  --调用增加经验函数
 	end
+
 end
 
 function seplayerstatus:DoDeltaExp(amount)

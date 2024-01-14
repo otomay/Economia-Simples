@@ -76,9 +76,9 @@ local function fn()
     end
 	
 	inst:AddComponent("tool")
-    inst.components.tool:SetAction(ACTIONS.CHOP, 0.5)
-    inst.components.tool:SetAction(ACTIONS.MINE, 0.5)
-    inst.components.tool:SetAction(ACTIONS.HAMMER, 0.5)
+    inst.components.tool:SetAction(ACTIONS.CHOP, 1)
+    inst.components.tool:SetAction(ACTIONS.MINE, 1)
+    inst.components.tool:SetAction(ACTIONS.HAMMER, 1)
 
     inst:AddComponent("weapon")
     inst.components.weapon:SetDamage(10)

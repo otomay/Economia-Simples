@@ -97,7 +97,8 @@ self.mainui.status = self.mainui:AddChild(Widget("status"))
 	self:cbbuild(100)
 
 self.coinamount = self:AddChild(Widget("coinamount"))
-	self.coinamount:SetPosition(-820, 325, 0)
+	self.coinamount:SetPosition(-1080, -558, 0)
+	
 	self.coinamount:SetScale(.8, .8, 1)
 	self.coinamount:SetClickable(false)
 
@@ -113,7 +114,7 @@ self.coinamount = self:AddChild(Widget("coinamount"))
 	self:displaycoinamount(self.coinamount.num)
 
 	self.mainbutton = self:AddChild(ImageButton("images/sehud/mainbutton.xml", "mainbutton.tex"))
-	self.mainbutton:SetPosition(-815, 370, 0)
+	self.mainbutton:SetPosition(-1061, -513, 0)
     self.mainbutton:SetNormalScale(1,1,1)
     self.mainbutton:SetFocusScale(1,1,1)
     self.mainbutton:SetOnGainFocus(function() self.mainbutton:ScaleTo(1,1.15,.125) self.mainbutton.new.middle = -15 end)
@@ -193,10 +194,10 @@ self.coinamount = self:AddChild(Widget("coinamount"))
 			self.owner.coinamount.o_pos = next_pos_c
 			self.owner.coinamount:SetPosition(next_pos_c)
 			--if self.draggingTimer > 3 then
-				--self.draggingTimer = 0x0
-				--self.moveLayerTimer = 0x0
-				--self:MoveToFront()
-				--return
+			--	self.draggingTimer = 0x0
+			--	self.moveLayerTimer = 0x0
+			--	self:MoveToFront()
+			--	return
 			--end
         end
         if not self.dragging then

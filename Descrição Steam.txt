@@ -24,8 +24,7 @@
 [list]
 [*]Removida a hotkey (até então obrigatória) de abrir a loja, que atrapalhava o uso do chat
 [*]Corrigido bug que crashava o server quando um monstro era morto no limbo
-[*]Adicionadas restrições de desintegração usando a Varinha de Midas, devido novas expansões do jogo (créditos: 
-[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2848628850]BM[/url])
+[*]Adicionadas restrições de desintegração usando a Varinha de Midas, devido novas expansões do jogo (créditos: [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2848628850]BM[/url])
 [*]Suporte parcial ao Português Brasileiro
 [/list]
 
